@@ -1,0 +1,44 @@
+2022-04-25 13:53:26.299  INFO 13552 --- [main] r.RabbitMqReleaseConfirmationApplication : Starting RabbitMqReleaseConfirmationApplication v0.0.1-SNAPSHOT using Java 16.0.2 on mao with PID 13552 (H:\程序\大三下期\rabbitMQ发布确认\target\rabbitMQ_release_confirmation-0.0.1-SNAPSHOT.jar started by mao in H:\程序\大三下期\rabbitMQ发布确认\target)
+2022-04-25 13:53:26.303 DEBUG 13552 --- [main] r.RabbitMqReleaseConfirmationApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 13:53:26.304  INFO 13552 --- [main] r.RabbitMqReleaseConfirmationApplication : The following 1 profile is active: "dev"
+2022-04-25 13:53:27.481  INFO 13552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-25 13:53:27.492  INFO 13552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 13:53:27.492  INFO 13552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-25 13:53:27.582  INFO 13552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-25 13:53:27.583  INFO 13552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1221 ms
+2022-04-25 13:53:28.318  INFO 13552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 13:53:28.321  INFO 13552 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-25 13:53:28.393  INFO 13552 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#12bcd0c0:0/SimpleConnection@24f43aa3 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54626]
+2022-04-25 13:53:28.399  INFO 13552 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (confirm_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-25 13:53:28.400  INFO 13552 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (confirm_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-25 13:53:28.472  INFO 13552 --- [main] r.RabbitMqReleaseConfirmationApplication : Started RabbitMqReleaseConfirmationApplication in 2.787 seconds (JVM running for 3.227)
+2022-04-25 13:53:34.593  INFO 13552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 13:53:34.594  INFO 13552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-25 13:53:34.596  INFO 13552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-25 13:53:34.635  INFO 13552 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:34.659  WARN 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:34.661  INFO 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息id为88819387-c9e6-48bc-a6bc-2d68d57bd93e的消息交换机已经收到
+2022-04-25 13:53:34.718  INFO 13552 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:34.720  WARN 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:34.722  INFO 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为0d2a1188-eabd-4cc6-9afc-9b211cb5b067的消息交换机已经收到
+2022-04-25 13:53:34.851  INFO 13552 --- [http-nio-8080-exec-3] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:34.853  WARN 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:34.854  INFO 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息id为344032e8-82ae-4f5b-8c21-9826886b1e4e的消息交换机已经收到
+2022-04-25 13:53:35.027  INFO 13552 --- [http-nio-8080-exec-4] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:35.028  WARN 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:35.029  INFO 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为7ac0d804-7bee-41d1-b2de-23e4736857a0的消息交换机已经收到
+2022-04-25 13:53:35.180  INFO 13552 --- [http-nio-8080-exec-5] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:35.183  WARN 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:35.184  INFO 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息id为3deb65b6-4812-445a-8264-cd9fb09984c4的消息交换机已经收到
+2022-04-25 13:53:35.356  INFO 13552 --- [http-nio-8080-exec-6] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:35.358  WARN 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:35.359  INFO 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为115d8462-e874-4b57-bea3-bbf1691f98ce的消息交换机已经收到
+2022-04-25 13:53:35.527  INFO 13552 --- [http-nio-8080-exec-7] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:35.529  WARN 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:35.530  INFO 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息id为685ede25-bc12-4128-b38a-4feeb6e6e8b5的消息交换机已经收到
+2022-04-25 13:53:35.731  INFO 13552 --- [http-nio-8080-exec-8] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:35.733  WARN 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:35.733  INFO 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为f78b4e39-2ccb-468b-89bb-a8a3ea49b2ea的消息交换机已经收到
+2022-04-25 13:53:35.902  INFO 13552 --- [http-nio-8080-exec-9] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:53:35.905  WARN 13552 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息不可路由：replyCode:312,replyText:NO_ROUTE,exchange:confirm_exchange,routingKey:key2
+2022-04-25 13:53:35.906  INFO 13552 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 消息id为4831033c-1252-44e4-8d0c-a912e9d41afe的消息交换机已经收到
