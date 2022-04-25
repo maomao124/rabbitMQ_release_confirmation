@@ -1,0 +1,96 @@
+2022-04-25 13:29:46.662  INFO 7456 --- [http-nio-8080-exec-3] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:29:46.668 ERROR 7456 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'confirm_exchange1' in vhost '/', class-id=60, method-id=40)
+2022-04-25 13:29:46.668  WARN 7456 --- [rabbitConnectionFactory2] m.r.config.RabbitMQCallBack              : 交换机未收到id为3f4dddbb-cc28-4d60-80f4-25c4f0b41efc的消息，原因：channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'confirm_exchange1' in vhost '/', class-id=60, method-id=40)
+2022-04-25 13:29:46.824  INFO 7456 --- [http-nio-8080-exec-4] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:29:46.828 ERROR 7456 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'confirm_exchange1' in vhost '/', class-id=60, method-id=40)
+2022-04-25 13:29:46.829  WARN 7456 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 交换机未收到id为3dfabaa3-46b4-4ffc-9c82-a5f1a5ea1f38的消息，原因：channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'confirm_exchange1' in vhost '/', class-id=60, method-id=40)
+2022-04-25 13:30:04.836  INFO 7456 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-25 13:30:05.034  INFO 7456 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-25 13:30:05.053  INFO 7456 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-25 13:30:08.220  INFO 10460 --- [main] r.RabbitMqReleaseConfirmationApplication : Starting RabbitMqReleaseConfirmationApplication using Java 16.0.2 on mao with PID 10460 (H:\程序\大三下期\rabbitMQ发布确认\target\classes started by mao in H:\程序\大三下期\rabbitMQ发布确认)
+2022-04-25 13:30:08.222 DEBUG 10460 --- [main] r.RabbitMqReleaseConfirmationApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 13:30:08.223  INFO 10460 --- [main] r.RabbitMqReleaseConfirmationApplication : The following 1 profile is active: "dev"
+2022-04-25 13:30:08.856  INFO 10460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-25 13:30:08.863  INFO 10460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 13:30:08.864  INFO 10460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-25 13:30:08.935  INFO 10460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-25 13:30:08.935  INFO 10460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 677 ms
+2022-04-25 13:30:09.386  INFO 10460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 13:30:09.387  INFO 10460 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-25 13:30:09.405  INFO 10460 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#26c89563:0/SimpleConnection@4b515eab [delegate=amqp://admin@127.0.0.1:5672/, localPort= 53796]
+2022-04-25 13:30:09.407  INFO 10460 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (confirm_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-25 13:30:09.408  INFO 10460 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (confirm_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-25 13:30:09.445  INFO 10460 --- [main] r.RabbitMqReleaseConfirmationApplication : Started RabbitMqReleaseConfirmationApplication in 1.539 seconds (JVM running for 1.971)
+2022-04-25 13:30:12.344  INFO 10460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 13:30:12.344  INFO 10460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-25 13:30:12.345  INFO 10460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-25 13:30:12.364  INFO 10460 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:30:12.377  INFO 10460 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为2d55b416-2d88-418e-b339-f7f318fd3777的消息交换机已经收到
+2022-04-25 13:30:12.477  INFO 10460 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:30:12.478  INFO 10460 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为1d1a8e2c-9c6d-4597-add7-718fa0358dff的消息交换机已经收到
+2022-04-25 13:30:12.628  INFO 10460 --- [http-nio-8080-exec-3] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:30:12.629  INFO 10460 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为99c6593a-3913-4e06-85ed-8b27702aca08的消息交换机已经收到
+2022-04-25 13:30:24.815  INFO 10460 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-25 13:30:25.578  INFO 10460 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-25 13:30:25.603  INFO 10460 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-25 13:30:28.716  INFO 4088 --- [main] r.RabbitMqReleaseConfirmationApplication : Starting RabbitMqReleaseConfirmationApplication using Java 16.0.2 on mao with PID 4088 (H:\程序\大三下期\rabbitMQ发布确认\target\classes started by mao in H:\程序\大三下期\rabbitMQ发布确认)
+2022-04-25 13:30:28.718 DEBUG 4088 --- [main] r.RabbitMqReleaseConfirmationApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 13:30:28.718  INFO 4088 --- [main] r.RabbitMqReleaseConfirmationApplication : The following 1 profile is active: "dev"
+2022-04-25 13:30:29.351  INFO 4088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-25 13:30:29.357  INFO 4088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 13:30:29.358  INFO 4088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-25 13:30:29.431  INFO 4088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-25 13:30:29.431  INFO 4088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 679 ms
+2022-04-25 13:30:29.884  INFO 4088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 13:30:29.886  INFO 4088 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-25 13:30:29.904  INFO 4088 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#26c89563:0/SimpleConnection@4b515eab [delegate=amqp://admin@127.0.0.1:5672/, localPort= 53819]
+2022-04-25 13:30:29.907  INFO 4088 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (confirm_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-25 13:30:29.907  INFO 4088 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (confirm_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-25 13:30:29.946  INFO 4088 --- [main] r.RabbitMqReleaseConfirmationApplication : Started RabbitMqReleaseConfirmationApplication in 1.548 seconds (JVM running for 1.97)
+2022-04-25 13:30:32.717  INFO 4088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 13:30:32.717  INFO 4088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-25 13:30:32.718  INFO 4088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-25 13:30:32.738  INFO 4088 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:30:32.755  INFO 4088 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为357113d5-35a8-4922-864a-2762ef0ba5dd的消息交换机已经收到
+2022-04-25 13:30:32.764  INFO 4088 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 消费者已经收到消息：hello
+2022-04-25 13:30:32.869  INFO 4088 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:30:32.870  INFO 4088 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为fe1af56d-7d09-4761-8bc9-712971204cee的消息交换机已经收到
+2022-04-25 13:30:32.871  INFO 4088 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 消费者已经收到消息：hello
+2022-04-25 13:30:33.022  INFO 4088 --- [http-nio-8080-exec-3] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:30:33.026  INFO 4088 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为927022cf-22e4-4868-b0fd-213e653b7ecb的消息交换机已经收到
+2022-04-25 13:30:33.027  INFO 4088 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 消费者已经收到消息：hello
+2022-04-25 13:44:20.099  INFO 4088 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-25 13:44:20.215  INFO 4088 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-25 13:44:20.243  INFO 4088 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-25 13:44:23.758  INFO 16708 --- [main] r.RabbitMqReleaseConfirmationApplication : Starting RabbitMqReleaseConfirmationApplication using Java 16.0.2 on mao with PID 16708 (H:\程序\大三下期\rabbitMQ发布确认\target\classes started by mao in H:\程序\大三下期\rabbitMQ发布确认)
+2022-04-25 13:44:23.760 DEBUG 16708 --- [main] r.RabbitMqReleaseConfirmationApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 13:44:23.761  INFO 16708 --- [main] r.RabbitMqReleaseConfirmationApplication : The following 1 profile is active: "dev"
+2022-04-25 13:44:24.397  INFO 16708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-25 13:44:24.403  INFO 16708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 13:44:24.404  INFO 16708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-25 13:44:24.476  INFO 16708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-25 13:44:24.476  INFO 16708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 676 ms
+2022-04-25 13:44:24.930  INFO 16708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 13:44:24.931  INFO 16708 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-25 13:44:24.950  INFO 16708 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5a75ec37:0/SimpleConnection@574059d5 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54278]
+2022-04-25 13:44:24.953  INFO 16708 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (confirm_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-25 13:44:24.953  INFO 16708 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (confirm_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-25 13:44:24.991  INFO 16708 --- [main] r.RabbitMqReleaseConfirmationApplication : Started RabbitMqReleaseConfirmationApplication in 1.615 seconds (JVM running for 2.051)
+2022-04-25 13:44:54.014  INFO 16708 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 13:44:54.014  INFO 16708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-25 13:44:54.015  INFO 16708 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-25 13:44:54.034  INFO 16708 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:44:54.050  INFO 16708 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为84697b8e-1482-4472-9bf4-90741ba32bf0的消息交换机已经收到
+2022-04-25 13:44:54.058  INFO 16708 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 消费者已经收到消息：hello
+2022-04-25 13:44:54.304  INFO 16708 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：hello
+2022-04-25 13:44:54.305  INFO 16708 --- [rabbitConnectionFactory1] m.r.config.RabbitMQCallBack              : 消息id为6d1cccc9-aeda-4ebf-8102-ecc84ab81e22的消息交换机已经收到
+2022-04-25 13:44:54.305  INFO 16708 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 消费者已经收到消息：hello
+2022-04-25 13:45:36.033  INFO 16708 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-25 13:45:36.720  INFO 16708 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-25 13:45:36.746  INFO 16708 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-25 13:45:40.076  INFO 12124 --- [main] r.RabbitMqReleaseConfirmationApplication : Starting RabbitMqReleaseConfirmationApplication using Java 16.0.2 on mao with PID 12124 (H:\程序\大三下期\rabbitMQ发布确认\target\classes started by mao in H:\程序\大三下期\rabbitMQ发布确认)
+2022-04-25 13:45:40.078 DEBUG 12124 --- [main] r.RabbitMqReleaseConfirmationApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-25 13:45:40.078  INFO 12124 --- [main] r.RabbitMqReleaseConfirmationApplication : The following 1 profile is active: "dev"
+2022-04-25 13:45:40.738  INFO 12124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-25 13:45:40.745  INFO 12124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 13:45:40.745  INFO 12124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
